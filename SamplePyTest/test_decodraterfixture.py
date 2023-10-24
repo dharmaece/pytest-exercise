@@ -28,7 +28,6 @@ def fruit_bowl():
 
 def test_fruit_salad(fruit_bowl):
     """this test case indicate fixture function usage"""
-
     #Act
     fruit_salad = FruitSalad(*fruit_bowl)
     #Assert
