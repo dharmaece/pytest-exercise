@@ -52,7 +52,7 @@ C:\Users\user\PycharmProjects\pytest-exercise\SamplePyTest>pytest -v -s -k "test
 
 ----------------------------------------------------------------------------------------------
 
-Run the command for pytest fixture concept:
+Run the command for pytest fixture feature:
 
 
 C:\Users\user\PycharmProjects\pytest-exercise\SamplePyTest>pytest -v -s -k "test_decodraterfixture.py"
@@ -60,11 +60,26 @@ C:\Users\user\PycharmProjects\pytest-exercise\SamplePyTest>pytest -v -s -k "test
 
 -----------------------------------------------------------------------------------------------
 
-Run the command for pytest fixture parametrization related file run
+Run the command for pytest fixture parametrization feature:
 
 C:\Users\user\PycharmProjects\pytest-exercise\SamplePyTest>pytest -v -s test_fixtureparam_addition.py
 
-----------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------
+
+Run command for adding command line argument(in this example, --calculationtype is a command line argument) feature:
+
+C:\Users\user\PycharmProjects\pytest-exercise\SamplePyTest>pytest -v -s --calculationtype addition  --> its valid case.
+
+C:\Users\user\PycharmProjects\pytest-exercise\SamplePyTest>pytest -v -s --calculationtype substraction  --> its invalid case.
+
+Run command for adding command line argument feature(in this example, CLA specified under addopts tag in pytest.ini file):
+
+C:\Users\user\PycharmProjects\pytest-exercise\SamplePyTest>pytest -v -s
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 GENERAL NOTE (SETUP):
 **************************
@@ -95,6 +110,7 @@ C:\Users\user\PycharmProjects\pytest-exercise>python -m get-pip
 
 Successfully installed pip-23.3.1
 
+-----------------------------------------------------------------------------------------------
 
 Ensure the below specified package version is installed or not.
 ***************************************************************
