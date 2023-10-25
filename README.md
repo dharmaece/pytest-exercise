@@ -80,6 +80,13 @@ C:\Users\user\PycharmProjects\pytest-exercise\SamplePyTest>pytest -v -s
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+Run command for parametrize decorator feature demonstration:
+
+C:\Users\user\PycharmProjects\pytest-exercise\SamplePyTest>pytest -v -s -k test_parametrizedecorator.py
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 GENERAL NOTE (SETUP):
 **************************
