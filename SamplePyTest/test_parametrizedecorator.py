@@ -1,6 +1,6 @@
 import pytest
 
-#this test case for explaining parametize decorator concept.
+#this test case will be executed 3 times with different set of argument , it's an example for explaining parametize decorator concept.
 
 @pytest.mark.parametrize("a,b,final",[(2,4,6),(3,7,10),(4,8,12)])
 def test_multiplecall_diffarg_fun(a,b,final):
