@@ -29,6 +29,11 @@ Run the command for string operation related 1 testcases(welcome string) with py
 C:\Users\user\PycharmProjects\pytest-exercise\SamplePyTest>pytest -v -s -k "test_helloworld.py"
 
 ----------------------------------------------------------------------------------------------
+Run the command for with marker decorator & without marker decorator in the same test file:
+
+
+C:\Users\user\PycharmProjects\pytest-exercise\SamplePyTest>pytest -v -s -k "test_groupingmarkers.py"
+
 
 Run the command for marker decorator:
 
@@ -46,6 +51,14 @@ C:\Users\user\PycharmProjects\pytest-exercise\SamplePyTest>pytest -v -s -k "test
 
 
 ----------------------------------------------------------------------------------------------
+
+Run the command for pytest fixture concept:
+
+
+C:\Users\user\PycharmProjects\pytest-exercise\SamplePyTest>pytest -v -s -k "test_decodraterfixture.py"
+
+
+-----------------------------------------------------------------------------------------------
 
 Run the command for pytest fixture parametrization related file run
 
