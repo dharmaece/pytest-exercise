@@ -15,10 +15,40 @@ pytest concept & Test execution command:
 git clone this repo (https://github.com/dharmaece/pytest-exercise.git).
 go to the cloned codebase path 
 
-Run the command for pytest fixture function usage related file run
+
+
+Run the command for addition operation related 2 testcases(2 num add, 3 num add) with pytest fixture function(addition_setup) usage related file run
+
 C:\Users\user\PycharmProjects\pytest-exercise>python -m pytest -v -s -k "test_addition.py"
 
+----------------------------------------------------------------------------------------------
+
+
+Run the command for string operation related 1 testcases(welcome string) with pytest fixture function(welcome_setup) usage related file run
+
+C:\Users\user\PycharmProjects\pytest-exercise\SamplePyTest>pytest -v -s -k "test_helloworld.py"
+
+----------------------------------------------------------------------------------------------
+
+Run the command for marker decorator:
+
+
+C:\Users\user\PycharmProjects\pytest-exercise\SamplePyTest>pytest -v -s -k "test_groupingmarkers.py" -m regression
+
+C:\Users\user\PycharmProjects\pytest-exercise\SamplePyTest>pytest -v -s -k "test_groupingmarkers.py" -m sanity
+
+
+C:\Users\user\PycharmProjects\pytest-exercise\SamplePyTest>pytest -v -s -k "test_groupingmarkers.py" -m skip
+
+
+C:\Users\user\PycharmProjects\pytest-exercise\SamplePyTest>pytest -v -s -k "test_groupingmarkers.py" -m xfail
+
+
+
+----------------------------------------------------------------------------------------------
+
 Run the command for pytest fixture parametrization related file run
+
 C:\Users\user\PycharmProjects\pytest-exercise\SamplePyTest>pytest -v -s test_fixtureparam_addition.py
 
 ----------------------------------------------------------------------------------------------
