@@ -13,17 +13,33 @@ C:\Users\user\PycharmProjects\pytest-exercise>python -m pytest -v -s -k "test_ad
 Run the command for pytest fixture parametrization related file run
 C:\Users\user\PycharmProjects\pytest-exercise\SamplePyTest>pytest -v -s test_fixtureparam_addition.py
 
+
 GENERAL NOTE (SETUP):
+**************************
+
 I have tried these experiment on windows 10 OS based PC.
-Install the PyCharm 2023.2.3 (Community Edition) package
-install the ini plugin using PyCharm utility
+1. Install the PyCharm 2023.2.3 (Community Edition) package.
+2. Install the python3.12 package.
+3. Install the pip python package.
+4. Install the ini plugin using PyCharm utility.
+5. Install git version control system for windows PC using PyCharm utility.
+
+EXE file required for Windows PC:
+**************************************
 
 pycharm-community-2023.2.3.exe
 python-3.12.0-amd64.exe
 
+pip python package installation procedure on windows PC:
+**************************************************************
+
 C:\Users\user\PycharmProjects\pytest-exercise>curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 C:\Users\user\PycharmProjects\pytest-exercise>python -m get-pip
 Successfully installed pip-23.3.1
+
+
+Ensure the below specified package version is installed or not.
+***************************************************************
 
 C:\Users\user\PycharmProjects\pytest-exercise>python --version
 Python 3.12.0
