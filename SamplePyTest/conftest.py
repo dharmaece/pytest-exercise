@@ -20,8 +20,4 @@ def welcome_setup():
 def test_alphabet(request):
     print("\n fixture function call counting using alphabet variable:",request.param,"\n")
 
-# def pytest_configure(config):
-#     config.addinivalue_line("markers", "regression: mark a test as a regression")
-#     config.addinivalue_line("markers", "sanity: mark a test as a sanity")
-#     config.addinivalue_line("other")
 
