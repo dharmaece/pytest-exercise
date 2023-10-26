@@ -6,6 +6,8 @@ import pytest
 @pytest.fixture(autouse=True,scope="session")
 def general_setup():
     print("\n general_setup fixture function will be applicable across all the file, since the scope is defined for session and autouse as True...")
+    yield
+    print("\n clean up progress")
 
 @pytest.fixture()
 def addition_setup(calculationtype):
