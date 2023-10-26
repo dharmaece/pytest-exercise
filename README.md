@@ -86,6 +86,30 @@ C:\Users\user\PycharmProjects\pytest-exercise\SamplePyTest>pytest -v -s -k test_
 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Test report generation command via command line argument: ( html report)
+
+C:\Users\user\PycharmProjects\pytest-exercise\SamplePyTest>pytest -v -s --html=testreport.html
+
+After test execution, you could see print like as below mentioned. goto the path and right click the report.html file to view it through chrome browser.
+
+-------- Generated html report: file:///C:/Users/user/PycharmProjects/pytest-exercise/SamplePyTest/report.html --------
+
+
+Test report generation command suppose it's specified in ini file: ( html report)
+
+
+C:\Users\user\PycharmProjects\pytest-exercise\SamplePyTest>pytest -v -s
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Run command for generating allure test report:
+
+C:\Users\user\PycharmProjects\pytest-exercise\SamplePyTest>pytest -v -s --alluredir=AllureReport
+
+C:\Users\user\PycharmProjects\pytest-exercise\SamplePyTest>allure serve AllureReport
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 GENERAL NOTE (SETUP):
@@ -154,8 +178,65 @@ wheel      0.41.2
 
 ---------------------------------------------------------------------------
 
+python module required to generate html report:
+***********************************************
+
+https://pypi.org/project/pytest-html/
+
+C:\Users\user\PycharmProjects\pytest-exercise\SamplePyTest>pip install pytest-html
+
+python module required to generate Allure report:
+**************************************************
+
+https://pypi.org/project/allure-pytest/
+
+C:\Users\user\PycharmProjects\pytest-exercise\SamplePyTest>pip install allure-pytest
+
+Installing the scoope (A command-line installer for Windows):
+***************************************************************
+
+Open the powershell terminal on windows PC and run the below command:
+
+i.
+
+PS C:\Users\user> Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+Execution Policy Change
+The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose
+you to the security risks described in the about_Execution_Policies help topic at
+https:/go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy?
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
+
+ii.
+
+PS C:\Users\user> irm get.scoop.sh | iex
+
+
+iii.
+
+PS C:\Users\user> scoop install allure
+
+iv. install the java 8 for windows OS.
+
+https://www.java.com/download/ie_manual.jsp ---> JavaSetup8u391.exe
+
+v. setting environmental variable for windows.
+https://confluence.atlassian.com/doc/setting-the-java_home-variable-in-windows-8895.html
+
+vi. download allure command line tool and setup PATH variable on Windows PC (C:\Program Files (x86)\allure-2.24.1\bin)
+https://github.com/allure-framework/allure2/releases
 
 
 
+reference link:
 
+https://allurereport.org/docs/
+
+https://allurereport.org/docs/gettingstarted/installation/
+
+https://scoop.sh/
+
+https://www.youtube.com/watch?v=xdjN-4UxL1c
+
+https://medium.com/testvagrant/generating-allure-reports-in-the-pytest-framework-89dc78a2ca85
 
